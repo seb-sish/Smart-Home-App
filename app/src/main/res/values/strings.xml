@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Smart Home App</string>
+    <string name="login">Войти</string>
+    <string name="email">E-mail</string>
+    <string name="pass">Пароль</string>
+    <string name="joinBtn">Войти в аккаунт</string>
+    <string name="remember_pass">Забыли пороль</string>
+    <string name="create">Создать новую учетную\n запись</string>
+    <string name="register">Регистрация</string>
+    <string name="name">Имя</string>
+    <string name="repeat_pass">Повторите пароль</string>
+    <string name="regBtn">Зарегестрироваться</string>
+    <string name="img_description">SMART HOME APP</string>
+    <string name="email_required">Необходимо указать корректный E-mail адрес!</string>
+    <string name="backBtnDescription">Вернуться назад</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Дом</string>
+    <string name="title_scenarios">Сценарии</string>
+    <string name="title_account">Профиль</string>
+    <string name="easy_password">Слишком простой пароль!</string>
+    <string name="unmatch_password">"Пароли не совпадают!"</string>
+    <string name="username_required">Некорректное имя пользователя!</string>
+    <string name="add_new_device">Нет устройств, пожалуйста, добавьте устройства</string>
+    <string name="add_device_button">Добавить устройство</string>
+    <string name="create_scenarios_button">Создать сценарий</string>
+    <string name="exit">Выход</string>
+    <string name="user">Пользователь</string>
+    <string name="user_edit_description">Редактирование информации уч. записи</string>
+    <string name="recovery">Забыли пароль</string>
+    <string name="email_recovery">Введите E-mail адрес аккаунта</string>
+    <string name="recoveryBtn">Восстановить аккаунт</string>
+    <string name="houseControl">Управление домом</string>
+    <string name="username">Имя пользователя</string>
+
+</resources>

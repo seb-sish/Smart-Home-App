@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.HomeFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_empty_box"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"/>
+    <TextView
+        android:layout_below="@id/imageBox"
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:text="@string/add_new_device"
+        android:textSize="14sp" />
+
+    <Button
+        style="@style/bigButtonsStyle"
+        android:textAppearance="@style/DefaultTextAppearance"
+        android:layout_below="@id/text_home"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_device_button"/>
+</RelativeLayout>

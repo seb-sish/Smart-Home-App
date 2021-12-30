@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "381871651184",
+    "project_id": "smart-home-project-db",
+    "storage_bucket": "smart-home-project-db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:381871651184:android:8a85a78cb4801ab95bb7b5",
+        "android_client_info": {
+          "package_name": "com.sebsish.smarthomeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "381871651184-oe93icspqsk5e5nffcodsgm49bu6ufdo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADXVEnDpqTGRAMJwYprFfy8lprJqy2ZIA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "381871651184-oe93icspqsk5e5nffcodsgm49bu6ufdo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

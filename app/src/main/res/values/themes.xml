@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.SmartHomeApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="backgroundColor">@color/white</item>
+
+        <item name="colorPrimary">@color/black</item>
+
+        <item name="colorSecondary">@color/whiteDarker</item>
+
+        <item name="colorOnSecondary">@color/whiteDarker</item>
+
+        <item name="panelBackground">@color/whiteDarker</item>
+        <item name="colorAccent">@color/white_orange</item>
+        <item name="colorButtonNormal">@color/orange</item>
+        <item name="buttonTint">@color/darker_orange_2</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="?attr/backgroundColor"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/loginEmail"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/login"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="36sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/loginEmail"
+        style="@style/TextFieldStyle"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="25dp"
+        app:endIconMode="clear_text"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/loginEmailEdit"
+            style="@style/editTextStyle"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/loginPassword"
+        style="@style/TextFieldStyle"
+        android:layout_below="@id/loginEmail"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="25dp"
+        app:errorEnabled="true"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/loginPasswordEdit"
+            style="@style/editTextStyle"
+            android:hint="@string/pass"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/loginBtn"
+        style="@style/bigButtonsStyle"
+        android:layout_below="@id/loginPassword"
+        android:layout_marginTop="50dp"
+
+        android:backgroundTint="?attr/buttonTint"
+        android:enabled="false"
+        android:onClick="login"
+        android:text="@string/joinBtn"
+        android:textAppearance="@style/bigButtonTextAppearance" />
+
+    <Button
+        android:onClick="remindPassword"
+        android:id="@+id/restorePass"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/loginBtn"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="?attr/colorSecondary"
+        android:padding="10dp"
+        android:text="@string/remember_pass"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#358DF2"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginBottom="50dp"
+
+        android:height="72dp"
+        android:backgroundTint="?attr/colorOnSecondary"
+        android:fontFamily="sans-serif-medium"
+        android:maxHeight="72dp"
+        android:onClick="toReg"
+        android:padding="10dp"
+        android:text="@string/create"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="16sp" />
+
+</RelativeLayout>
