@@ -7,11 +7,18 @@
         <entry key="..\:/Users/PC/Desktop/smarthomeapp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.22135416666666666" />
         <entry key="..\:/Users/PC/Desktop/smarthomeapp/app/src/main/res/drawable/bg_edittext.xml" value="0.3828125" />
         <entry key="..\:/Users/PC/Desktop/smarthomeapp/app/src/main/res/drawable/bg_rounded.xml" value="0.3828125" />
+        <entry key="..\:/Users/PC/Desktop/smarthomeapp/app/src/main/res/drawable/device_air_conditioning.xml" value="0.3828125" />
+        <entry key="..\:/Users/PC/Desktop/smarthomeapp/app/src/main/res/drawable/device_electric_range.xml" value="0.3828125" />
+        <entry key="..\:/Users/PC/Desktop/smarthomeapp/app/src/main/res/drawable/device_garage.xml" value="0.3828125" />
+        <entry key="..\:/Users/PC/Desktop/smarthomeapp/app/src/main/res/drawable/device_light.xml" value="0.3828125" />
         <entry key="..\:/Users/PC/Desktop/smarthomeapp/app/src/main/res/drawable/ic_baseline_account_circle_24dp.xml" value="0.203125" />
         <entry key="..\:/Users/PC/Desktop/smarthomeapp/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.203125" />
         <entry key="..\:/Users/PC/Desktop/smarthomeapp/app/src/main/res/drawable/ic_baseline_add_48.xml" value="0.203125" />
         <entry key="..\:/Users/PC/Desktop/smarthomeapp/app/src/main/res/drawable/ic_baseline_arrow_back_ios_24.xml" value="0.3828125" />
+        <entry key="..\:/Users/PC/Desktop/smarthomeapp/app/src/main/res/drawable/ic_baseline_dark_mode_24.xml" value="0.3592592592592593" />
+        <entry key="..\:/Users/PC/Desktop/smarthomeapp/app/src/main/res/drawable/ic_baseline_extension_96.xml" value="0.3592592592592593" />
         <entry key="..\:/Users/PC/Desktop/smarthomeapp/app/src/main/res/drawable/ic_baseline_wb_incandescent_24dp.xml" value="0.203125" />
+        <entry key="..\:/Users/PC/Desktop/smarthomeapp/app/src/main/res/drawable/ic_electric_range.xml" value="0.3592592592592593" />
         <entry key="..\:/Users/PC/Desktop/smarthomeapp/app/src/main/res/drawable/ic_empty_box.xml" value="0.203125" />
         <entry key="..\:/Users/PC/Desktop/smarthomeapp/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.203125" />
         <entry key="..\:/Users/PC/Desktop/smarthomeapp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.22135416666666666" />
@@ -20,10 +27,10 @@
         <entry key="..\:/Users/PC/Desktop/smarthomeapp/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/PC/Desktop/smarthomeapp/app/src/main/res/layout/content_register1.xml" value="0.33" />
         <entry key="..\:/Users/PC/Desktop/smarthomeapp/app/src/main/res/layout/default_activity.xml" value="0.25" />
-        <entry key="..\:/Users/PC/Desktop/smarthomeapp/app/src/main/res/layout/fragment_account.xml" value="0.5" />
+        <entry key="..\:/Users/PC/Desktop/smarthomeapp/app/src/main/res/layout/fragment_account.xml" value="0.33" />
         <entry key="..\:/Users/PC/Desktop/smarthomeapp/app/src/main/res/layout/fragment_dashboard.xml" value="0.3179347826086957" />
         <entry key="..\:/Users/PC/Desktop/smarthomeapp/app/src/main/res/layout/fragment_first.xml" value="0.20520833333333333" />
-        <entry key="..\:/Users/PC/Desktop/smarthomeapp/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Users/PC/Desktop/smarthomeapp/app/src/main/res/layout/fragment_home.xml" value="0.33" />
         <entry key="..\:/Users/PC/Desktop/smarthomeapp/app/src/main/res/layout/fragment_notifications.xml" value="0.3179347826086957" />
         <entry key="..\:/Users/PC/Desktop/smarthomeapp/app/src/main/res/layout/fragment_scenarios.xml" value="0.30027173913043476" />
         <entry key="..\:/Users/PC/Desktop/smarthomeapp/app/src/main/res/layout/fragment_second.xml" value="0.20520833333333333" />
@@ -32,6 +39,7 @@
         <entry key="..\:/Users/PC/Desktop/smarthomeapp/app/src/main/res/layout/recovery_activity.xml" value="0.26856884057971014" />
         <entry key="..\:/Users/PC/Desktop/smarthomeapp/app/src/main/res/layout/register_activity.xml" value="0.33" />
         <entry key="..\:/Users/PC/Desktop/smarthomeapp/app/src/main/res/layout/register_activity1.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/PC/Desktop/smarthomeapp/app/src/main/res/layout/setup_activity.xml" value="0.33" />
         <entry key="..\:/Users/PC/Desktop/smarthomeapp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.36666666666666664" />
       </map>
     </option>
