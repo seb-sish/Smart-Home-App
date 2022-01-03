@@ -31,5 +31,7 @@
     <string name="recoveryBtn">Восстановить аккаунт</string>
     <string name="houseControl">Управление домом</string>
     <string name="username">Имя пользователя</string>
+    <string name="tempControl">Ед. измерения температуры</string>
+    <string name="themeControl">Темный режим</string>
 
 </resources>

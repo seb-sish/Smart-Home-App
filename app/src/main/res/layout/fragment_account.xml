@@ -42,22 +42,62 @@
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_alignTop="@+id/user_icon"
-        android:layout_marginStart="10dp"
         android:layout_marginTop="25dp"
         android:layout_toEndOf="@+id/edit_user_info"
         android:background="@drawable/ic_baseline_arrow_back_ios_24"
         android:rotation="180" />
+
     <LinearLayout
+        android:id="@+id/houseControl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/edit_user_info"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_rounded"
+        android:backgroundTint="?attr/panelBackground"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginVertical="20dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/ic_home_black_24dp"
+            android:backgroundTint="?attr/colorPrimary" />
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="?attr/panelBackground"
+            android:padding="15dp"
+            android:shadowColor="?attr/panelBackground"
+            android:text="@string/houseControl"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/DefaultTextAppearance"
+            android:textColor="?attr/colorPrimary" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginVertical="20dp"
+            android:layout_marginStart="75dp"
+            android:background="@drawable/ic_baseline_arrow_back_ios_24"
+            android:rotation="180" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/houseControl"
         android:layout_marginTop="50dp"
         android:layout_marginHorizontal="30dp"
         android:orientation="vertical"
         android:background="@drawable/bg_edittext"
         android:backgroundTint="?attr/panelBackground">
+
         <LinearLayout
-            android:id="@+id/houseControl"
+            android:id="@+id/tempControl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -68,7 +108,8 @@
                 android:layout_height="24dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginVertical="20dp"
-                android:background="@drawable/ic_home_black_24dp" />
+                android:background="@drawable/ic_home_black_24dp"
+                android:backgroundTint="?attr/colorPrimary"/>
             <Button
                 android:shadowColor="?attr/panelBackground"
                 android:layout_width="wrap_content"
@@ -76,7 +117,7 @@
                 android:padding="15dp"
                 style="?android:attr/borderlessButtonStyle"
                 android:backgroundTint="?attr/panelBackground"
-                android:text="@string/houseControl"
+                android:text="@string/tempControl"
                 android:textAlignment="textStart"
                 android:textAppearance="@style/DefaultTextAppearance"
                 android:textColor="?attr/colorPrimary" />
@@ -84,13 +125,13 @@
             <androidx.appcompat.widget.AppCompatImageButton
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:layout_marginStart="75dp"
+                android:layout_marginStart="0dp"
                 android:layout_marginVertical="20dp"
                 android:background="@drawable/ic_baseline_arrow_back_ios_24"
                 android:rotation="180" />
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/houseControl"
+            android:id="@+id/themeControl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -101,7 +142,8 @@
                 android:layout_height="24dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginVertical="20dp"
-                android:background="@drawable/ic_home_black_24dp" />
+                android:background="@drawable/ic_home_black_24dp"
+                android:backgroundTint="?attr/colorPrimary"/>
             <Button
                 android:shadowColor="?attr/panelBackground"
                 android:layout_width="wrap_content"
@@ -109,7 +151,7 @@
                 android:padding="15dp"
                 style="?android:attr/borderlessButtonStyle"
                 android:backgroundTint="?attr/panelBackground"
-                android:text="@string/houseControl"
+                android:text="@string/themeControl"
                 android:textAlignment="textStart"
                 android:textAppearance="@style/DefaultTextAppearance"
                 android:textColor="?attr/colorPrimary" />
@@ -117,40 +159,7 @@
             <androidx.appcompat.widget.AppCompatImageButton
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:layout_marginStart="75dp"
-                android:layout_marginVertical="20dp"
-                android:background="@drawable/ic_baseline_arrow_back_ios_24"
-                android:rotation="180" />
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/houseControl"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="@drawable/bg_rounded"
-            android:backgroundTint="?attr/panelBackground">
-            <androidx.appcompat.widget.AppCompatImageButton
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginVertical="20dp"
-                android:background="@drawable/ic_home_black_24dp" />
-            <Button
-                android:shadowColor="?attr/panelBackground"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="15dp"
-                style="?android:attr/borderlessButtonStyle"
-                android:backgroundTint="?attr/panelBackground"
-                android:text="@string/houseControl"
-                android:textAlignment="textStart"
-                android:textAppearance="@style/DefaultTextAppearance"
-                android:textColor="?attr/colorPrimary" />
-
-            <androidx.appcompat.widget.AppCompatImageButton
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_marginStart="75dp"
+                android:layout_marginStart="111dp"
                 android:layout_marginVertical="20dp"
                 android:background="@drawable/ic_baseline_arrow_back_ios_24"
                 android:rotation="180" />
