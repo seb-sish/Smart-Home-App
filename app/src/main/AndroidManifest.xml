@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartHomeApp">
         <activity
+            android:name=".SetupActivity"
+            android:exported="false" />
+        <activity
             android:name=".RecoveryActivity"
             android:exported="false" />
         <activity

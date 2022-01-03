@@ -25,13 +25,14 @@
         android:textSize="14sp" />
 
     <Button
+        android:onClick="addDevice"
+        android:id="@+id/setupButton"
         style="@style/bigButtonsStyle"
-        android:textAppearance="@style/DefaultTextAppearance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@id/text_home"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/add_device_button"/>
+        android:text="@string/add_device_button"
+        android:textAppearance="@style/DefaultTextAppearance" />
 </RelativeLayout>

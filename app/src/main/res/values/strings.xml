@@ -33,5 +33,16 @@
     <string name="username">Имя пользователя</string>
     <string name="tempControl">Ед. измерения температуры</string>
     <string name="themeControl">Темный режим</string>
+    <string name="setupDevice">Добавление устройства</string>
+    <string name="hubs_header">━━━━━━━━━ Хаб ━━━━━━━━━</string>
+    <string name="wifi_hub">Wi-Fi Хаб</string>
+    <string name="sockets_header">━━━━━━━━━ Розетки ━━━━━━━━━</string>
+    <string name="wifi_socket">Wi-Fi Розетка</string>
+    <string name="lights_header">━━━━━━━━━ Освещение ━━━━━━━━━</string>
+    <string name="wifi_light">Wi-Fi Источник света</string>
+    <string name="pwrbtns_header">━━━━━━━━━ Выключатели ━━━━━━━━━</string>
+    <string name="wifi_pwrbtn">Wi-Fi Выключатель</string>
+    <string name="sensors_header">━━━━━━━━━ Датчики ━━━━━━━━━</string>
+    <string name="wifi_temp_and_humid_sensor">Wi-Fi Датчик темп. и влажн.</string>
 
 </resources>

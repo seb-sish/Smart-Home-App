@@ -8,10 +8,11 @@
     <color name="blue">#0087FF</color>
 
     <color name="black">#FF000000</color>
+
     <color name="grey">#4E5254</color>
     <color name="darkGrey">#191919</color>
-
     <color name="semiGrey">#1A1A1A</color>
+    <color name="x11grey">#BEBEBE</color>
 
     <color name="white">#FEFEFE</color>
     <color name="whiteDarker">#F6F7FB</color>

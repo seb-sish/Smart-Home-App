@@ -53,4 +53,10 @@ public class MainActivity extends AppCompatActivity {
         overridePendingTransition(R.anim.login_to_reg_1, R.anim.login_to_reg_2);
         finish();
     }
+
+    public void addDevice (View view){
+        Intent intent = new Intent(MainActivity.this, SetupActivity.class);
+        startActivity(intent);
+        overridePendingTransition(R.anim.login_to_reg_1, R.anim.login_to_reg_2);
+    }
 }

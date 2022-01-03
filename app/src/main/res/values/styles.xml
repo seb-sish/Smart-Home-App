@@ -22,6 +22,7 @@
         <item name="android:textSize">18sp</item>
         <item name="fontFamily">sans-serif</item>
         <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
     </style>
 
     <style name="bigButtonsStyle" parent="@style/Widget.MaterialComponents.Button">
@@ -47,5 +48,25 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_centerHorizontal">true</item>
 
+    </style>
+
+    <style name="deviceImageBtnStyle">
+        <item name="android:layout_height">64dp</item>
+        <item name="android:layout_width">64dp</item>
+        <item name="android:backgroundTint">?attr/cardBackgroundColor</item>
+    </style>
+    <style name="deviceTextAppearance" parent="DefaultTextAppearance">
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_width">64dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="deviceHeaderTextAppearance" parent="DefaultTextAppearance">
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">50dp</item>
+        <item name="android:textColor">@color/grey</item>
     </style>
 </resources>
