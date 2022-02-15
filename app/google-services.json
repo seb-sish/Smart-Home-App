@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "381871651184",
+    "firebase_url": "https://smart-home-project-db-default-rtdb.europe-west1.firebasedatabase.app",
     "project_id": "smart-home-project-db",
     "storage_bucket": "smart-home-project-db.appspot.com"
   },

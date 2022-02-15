@@ -24,6 +24,11 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.UserProfileChangeRequest;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.IgnoreExtraProperties;
+
+import java.util.HashMap;
 
 
 public class RegisterActivity extends AppCompatActivity {
@@ -81,12 +86,16 @@ public class RegisterActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
+                            FirebaseDatabase database = FirebaseDatabase.getInstance();
+                            DatabaseReference myRef = database.getReference("users");
+
                             // Sign in success, update UI with the signed-in user's information
                             Log.d("reg", "createUserWithEmail:success");
                             UserProfileChangeRequest profileUpdates = new UserProfileChangeRequest.Builder()
                                     .setDisplayName(usernameText).build();
                             FirebaseUser user = mAuth.getCurrentUser();
                             user.updateProfile(profileUpdates);
+                            myRef.child(user.getUid()).setValue(new User(usernameText, emailText, passwordText));
                             Bundle bundle = new Bundle();
                             bundle.putString(FirebaseAnalytics.Param.METHOD, "регистрация");
                             mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SIGN_UP, bundle);
@@ -97,7 +106,7 @@ public class RegisterActivity extends AppCompatActivity {
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w("reg", "createUserWithEmail:failure", task.getException());
-                            Toast.makeText(RegisterActivity.this, "Authentication failed.",
+                            Toast.makeText(RegisterActivity.this, task.getException().getLocalizedMessage(),
                                     Toast.LENGTH_SHORT).show();
                         }
                     }
@@ -164,3 +173,4 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
 }
+
