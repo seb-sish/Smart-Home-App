@@ -15,7 +15,6 @@ import com.sebsish.smarthomeapp.R;
 public class AccountFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-
         View view = inflater.inflate(R.layout.fragment_account, container, false);
 
         TextView username = view.findViewById(R.id.accountUsername);

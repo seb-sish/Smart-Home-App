@@ -44,5 +44,7 @@
     <string name="wifi_pwrbtn">Wi-Fi Выключатель</string>
     <string name="sensors_header">━━━━━━━━━ Датчики ━━━━━━━━━</string>
     <string name="wifi_temp_and_humid_sensor">Wi-Fi Датчик темп. и влажн.</string>
+    <string name="connectToHub">Подключение к хабу</string>
+    <string name="connectToHubDescription">Выберите из списка ниже, Wi-Fi точку вашего хаба, с названием \"Smart home hub - xxxx\"</string>
 
 </resources>

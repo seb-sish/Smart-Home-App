@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeControlActivity">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/SetupExitBtn"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ic_baseline_arrow_back_ios_24"
+        android:contentDescription="@string/backBtnDescription"
+        android:onClick="Exit" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/connectToHub"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/belowTextView"
+        android:layout_below="@id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/connectToHubDescription"
+        android:textColor="@color/grey"
+        android:textSize="12sp"
+        android:textAlignment="center"
+        android:layout_marginHorizontal="50dp"/>
+        <ListView
+            android:id="@+id/WiFiStates"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/belowTextView"
+            android:layout_width="match_parent"
+            android:layout_height="550dp" />
+
+    <LinearLayout
+        android:id="@+id/houseControl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/WiFiStates"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bg_rounded"
+        android:backgroundTint="?attr/panelBackground"
+        android:onClick="connect"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginVertical="20dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/ic_home_black_24dp"
+            android:backgroundTint="?attr/colorPrimary"
+            android:onClick="connect" />
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="?attr/panelBackground"
+            android:onClick="connect"
+            android:padding="15dp"
+            android:shadowColor="?attr/panelBackground"
+            android:text="@string/houseControl"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/DefaultTextAppearance"
+            android:textColor="?attr/colorPrimary" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginVertical="20dp"
+            android:layout_marginStart="75dp"
+            android:background="@drawable/ic_baseline_arrow_back_ios_24"
+            android:onClick="connect"
+            android:rotation="180" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -65,4 +65,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
         overridePendingTransition(R.anim.login_to_reg_1, R.anim.login_to_reg_2);
     }
+
+    public void toHomeControl (View view){
+        Intent intent = new Intent(MainActivity.this, HomeControlActivity.class);
+        startActivity(intent);
+        overridePendingTransition(R.anim.login_to_reg_1, R.anim.login_to_reg_2);
+    }
 }
