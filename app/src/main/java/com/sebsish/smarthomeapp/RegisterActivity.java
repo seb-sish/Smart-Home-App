@@ -113,7 +113,6 @@ public class RegisterActivity extends AppCompatActivity {
                 });
     }
 
-
     private final TextWatcher generalTextWatcher = new TextWatcher() {
         @Override
         public void onTextChanged(CharSequence s, int start, int before, int count) {
@@ -166,7 +165,6 @@ public class RegisterActivity extends AppCompatActivity {
         super.onBackPressed();
         overridePendingTransition(R.anim.reg_to_login_2, R.anim.reg_to_login_1);
     }
-
     public void Exit (View view) {
         finish();
         overridePendingTransition(R.anim.reg_to_login_2, R.anim.reg_to_login_1);
