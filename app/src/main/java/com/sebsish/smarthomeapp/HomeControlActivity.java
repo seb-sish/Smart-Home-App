@@ -2,15 +2,13 @@ package com.sebsish.smarthomeapp;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.sebsish.smarthomeapp.User;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
+import com.sebsish.smarthomeapp.dataFormats.User;
 import com.sebsish.smarthomeapp.socket.SocketClient;
 
 import android.os.Bundle;
@@ -22,16 +20,12 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 
 public class HomeControlActivity extends AppCompatActivity {
-    private FirebaseAuth mAuth;
     private DatabaseReference myRef;
     private FirebaseUser user;
 
@@ -40,9 +34,7 @@ public class HomeControlActivity extends AppCompatActivity {
     TextInputLayout createWifi;
     TextInputLayout createWifiPass;
     CheckBox checkBox;
-
-    String email;
-    String password;
+    User userData;
 
     SocketClient client = new SocketClient(this, "192.168.0.100");
     @Override
@@ -50,9 +42,8 @@ public class HomeControlActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        mAuth = FirebaseAuth.getInstance();
         myRef = database.getReference("users");
-        user = mAuth.getCurrentUser();
+        user = FirebaseAuth.getInstance().getCurrentUser();
 
         setContentView(R.layout.activity_home_control);
 
@@ -80,10 +71,8 @@ public class HomeControlActivity extends AppCompatActivity {
                 if (task.isSuccessful()){
                     if (Objects.requireNonNull(task.getResult()).exists()){
 //                        Toast.makeText(HomeControlActivity.this, "Successfully Read",Toast.LENGTH_SHORT).show();
-                        DataSnapshot dataSnapshot = task.getResult();
-                        email = String.valueOf(dataSnapshot.child("email").getValue());
-                        password = String.valueOf(dataSnapshot.child("password").getValue());
-                        Log.d("data", email+" "+password);
+                        userData = task.getResult().getValue(User.class);
+                        Log.d("data", userData.getEmail()+" "+userData.getPassword());
                     } else { Toast.makeText(HomeControlActivity.this,"Отсутствуют данные в базе данных!",Toast.LENGTH_SHORT).show(); }
                 } else { Toast.makeText(HomeControlActivity.this,"Ошибка при чтении данных!",Toast.LENGTH_SHORT).show(); }
             }
@@ -101,7 +90,7 @@ public class HomeControlActivity extends AppCompatActivity {
                         "\"connected_ssid\": {\"essid\":\"%s\", \"password\":\"%s\"}, " +
                         "\"created_ssid\": {\"essid\":\"%s\",\"password\":\"%s\"}" +
                         "}",
-                email, password, connectWifiText, connectWifiPassText, createWifiText, createWifiPassText));
+                userData.getEmail(), userData.getPassword(), connectWifiText, connectWifiPassText, createWifiText, createWifiPassText));
         Toast.makeText(this, "Данные успешно записаны! Необходимо перезагрузить хаб.", Toast.LENGTH_LONG).show();
         Exit();
     }

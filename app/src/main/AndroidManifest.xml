@@ -10,10 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartHomeApp">
         <activity
+            android:name=".modules.TempModule"
+            android:exported="false" />
+        <activity
+            android:name=".ScenariosSetupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".modules.SocketModule"
+            android:exported="false" />
+        <activity
             android:name=".HomeControlActivity"
             android:exported="false" />
         <activity
-            android:name=".SetupActivity"
+            android:name=".ModulesSetupActivity"
             android:exported="false" />
         <activity
             android:name=".RecoveryActivity"

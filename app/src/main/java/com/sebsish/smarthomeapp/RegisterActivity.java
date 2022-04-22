@@ -26,9 +26,7 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.UserProfileChangeRequest;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.IgnoreExtraProperties;
-
-import java.util.HashMap;
+import com.sebsish.smarthomeapp.dataFormats.User;
 
 
 public class RegisterActivity extends AppCompatActivity {

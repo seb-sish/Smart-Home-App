@@ -5,7 +5,6 @@ import android.util.Log;
 import android.widget.Toast;
 
 import com.sebsish.smarthomeapp.HomeControlActivity;
-import com.sebsish.smarthomeapp.databinding.ActivityHomeControlBinding;
 
 import java.io.*;
 import java.net.Socket;

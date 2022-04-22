@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_rounded"
+    android:backgroundTint="?attr/colorSecondary"
+    android:padding="16dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/module_icon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:backgroundTint="@color/grey"
+        android:background="@drawable/device_socket_f" />
+
+    <TextView
+        android:id="@+id/module_temp_desc"
+        style="@style/deviceTextAppearance"
+        android:layout_width="wrap_content"
+        android:layout_alignStart="@id/module_hum_desc"
+        android:layout_toStartOf="@+id/module_temp"
+        android:fontFamily="sans-serif-black"
+        android:text="Темп: "
+        android:textAlignment="textStart"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/module_temp"
+        style="@style/deviceTextAppearance"
+        android:layout_width="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="2dp"
+        android:textAlignment="textStart"
+        android:fontFamily="sans-serif-black"
+        android:text=""
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/module_hum_desc"
+        style="@style/deviceTextAppearance"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/module_temp"
+        android:layout_toStartOf="@+id/module_temp"
+        android:fontFamily="sans-serif-black"
+        android:text="Влажн: "
+        android:textAlignment="textStart"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/module_hum"
+        style="@style/deviceTextAppearance"
+        android:layout_width="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/module_temp"
+        android:textAlignment="textStart"
+        android:fontFamily="sans-serif-black"
+        android:text=""
+        android:textSize="16sp" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/powerBtn"
+        style="@style/deviceImageBtnStyle"
+        android:layout_marginEnd="4dp"
+        android:layout_alignParentEnd="true"
+        android:layout_height="48dp"
+        android:layout_width="48dp"
+        android:background="@drawable/device_power_button" />
+
+    <TextView
+        android:id="@+id/module_name"
+        style="@style/deviceTextAppearance"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/module_icon"
+        android:textAlignment="textStart"
+        android:fontFamily="sans-serif-black"
+        android:maxLines="1"
+        android:text="Розетка"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/module_room"
+        style="@style/deviceTextAppearance"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/module_name"
+        android:layout_marginTop="0dp"
+        android:fontFamily="sans-serif-light"
+        android:maxLines="1"
+        android:text="Спальня"
+        android:textAlignment="textStart"
+        android:textColor="@color/grey"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

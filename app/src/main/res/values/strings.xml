@@ -22,8 +22,9 @@
     <string name="username_required">Некорректное имя пользователя!</string>
     <string name="add_new_device">Нет устройств, пожалуйста, добавьте устройства</string>
     <string name="add_device_button">Добавить устройство</string>
+    <string name="add_new_scenarios">Нет сценариев для выполнения</string>
     <string name="create_scenarios_button">Создать сценарий</string>
-    <string name="exit">Выход</string>
+
     <string name="user">Пользователь</string>
     <string name="user_edit_description">Редактирование информации уч. записи</string>
     <string name="recovery">Забыли пароль</string>
@@ -33,6 +34,7 @@
     <string name="username">Имя пользователя</string>
     <string name="tempControl">Ед. измерения температуры</string>
     <string name="themeControl">Темный режим</string>
+
     <string name="setupDevice">Добавление устройства</string>
     <string name="hubs_header">━━━━━━━━━ Хаб ━━━━━━━━━</string>
     <string name="wifi_hub">Wi-Fi Хаб</string>
@@ -47,6 +49,7 @@
 
     <string name="next">Далее</string>
     <string name="Back">Назад</string>
+    <string name="exit">Выход</string>
 
     <string name="HubSetting">Настройки хаба</string>
     <string name="HubSettingDescription">Для настройки хаба, необходимо подключиться к его Wi-Fi точке, под названием \"Smart home hub - xxxx\"</string>
@@ -56,5 +59,33 @@
     <string name="confirm">Применить изменения</string>
     <string name="createWifiPass">Введите новый пароль Wi-Fi сети хаба</string>
     <string name="createWifi">Введите новое название Wi-Fi сети хаба</string>
+
+    <string name="socketConnect">Подключение розетки</string>
+    <string name="socketConnectDescription">Для подключения умной розетки, необходимо подключиться к ее Wi-Fi точке, под названием \"Smart home socket - xxxx\"</string>
+    <string name="lightConnect">Подключение лампы</string>
+    <string name="lightConnectDescription">Для подключения умной лампы, необходимо подключиться к ее Wi-Fi точке, под названием \"Smart home lamp - xxxx\"</string>
+    <string name="switcherConnect">Подключение выключателя</string>
+    <string name="switcherConnectDescription">Для подключения умного выключателя, необходимо подключиться к его Wi-Fi точке, под названием \"Smart home switcher - xxxx\"</string>
+    <string name="tempModuleConnect">Подключение модуля темп.</string>
+    <string name="tempModuleConnectDescription">Для подключения умного датчика температуры и влажности, необходимо подключиться к его Wi-Fi точке, под названием \"Smart home temperature sensor - xxxx\"</string>
+
+    <string name="dark_mode">Темная тема</string>
+    <string name="light_mode">Светлая тема</string>
+    <string name="system_mode">Использовать системную тему</string>
+
+    <string name="login_to_guest">Войти в гостевой аккаунт</string>
+    <string name="scenarioCreate">Создание сценария</string>
+
+    <string-array name="indicators">
+        <item>Температура</item>
+        <item>Влажность</item>
+    </string-array>
+    <string-array name="conditions">
+        <item>&gt;</item>
+        <item>&lt;</item>
+        <item>=</item>
+        <item>&lt;=</item>
+        <item>&lt;=</item>
+    </string-array>
 
 </resources>
