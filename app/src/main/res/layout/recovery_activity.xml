@@ -50,12 +50,26 @@
         android:id="@+id/recoveryBtn"
         style="@style/bigButtonsStyle"
         android:layout_below="@id/recoveryEmail"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="16dp"
 
         android:backgroundTint="?attr/buttonTint"
         android:enabled="false"
         android:onClick="recovery"
         android:text="@string/recoveryBtn"
         android:textAppearance="@style/bigButtonTextAppearance" />
+    <Button
+        android:onClick="loginToGuest"
+        android:id="@+id/loginToGuestBtn"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/recoveryBtn"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="?attr/colorSecondary"
+        android:padding="10dp"
+        android:text="@string/login_to_guest"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#358DF2"
+        android:textSize="12sp" />
 
 </RelativeLayout>

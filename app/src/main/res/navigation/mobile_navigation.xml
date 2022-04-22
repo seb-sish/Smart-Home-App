@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.sebsish.smarthomeapp.ui.HomeFragment"
+        android:name="com.sebsish.smarthomeapp.ui.EmptyHomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home_empty" />
 
     <fragment
         android:id="@+id/navigation_scenarios"

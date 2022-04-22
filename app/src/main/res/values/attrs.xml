@@ -3,6 +3,7 @@
     <declare-styleable name="ViewStyle">
 
         <attr name="colorButtonNormal" format="color" />
+        <attr name="cardBackgroundColor" format="color" />
         <attr name="buttonTint" format="color" />
         <attr name="textSize" format="dimension" />
 

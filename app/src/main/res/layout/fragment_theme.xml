@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ThemeFragment">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/ThemeExitBtn"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ic_baseline_arrow_back_ios_24"
+        android:contentDescription="@string/backBtnDescription"
+        android:onClick="Exit" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ThemeExitBtn">
+
+        <RadioButton
+            android:id="@+id/darkBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dark_mode" />
+
+        <RadioButton
+            android:id="@+id/lightBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/light_mode" />
+
+        <RadioButton
+            android:id="@+id/systemBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/system_mode" />
+
+    </RadioGroup>
+</RelativeLayout>

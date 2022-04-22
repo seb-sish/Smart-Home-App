@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".modules.SocketModule">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/SetupExitBtn"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ic_baseline_arrow_back_ios_24"
+        android:contentDescription="@string/backBtnDescription"
+        android:onClick="Exit" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/socketConnect"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/belowTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="50dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/socketConnectDescription"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textSize="12sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:enabled="false"
+        android:id="@+id/connectWifi"
+        style="@style/TextFieldStyle"
+        android:layout_below="@id/textView"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="100dp"
+        app:endIconMode="clear_text"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/connectWifiEdit"
+            style="@style/editTextStyle"
+            android:hint="@string/connectWifi"
+            android:inputType="textPersonName" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:enabled="false"
+        android:id="@+id/connectWifiPass"
+        style="@style/TextFieldStyle"
+        android:layout_below="@id/connectWifi"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="10dp"
+        app:errorEnabled="true"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/connectWifiPassEdit"
+            style="@style/editTextStyle"
+            android:hint="@string/connectWifiPass"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:enabled="false"
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginStart="25dp"
+        android:layout_below="@id/connectWifiPass"
+        android:text="@string/createWifiCheckBox" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:enabled="false"
+        android:id="@+id/createWifi"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/checkBox"
+        style="@style/TextFieldStyle"
+        android:layout_marginHorizontal="25dp"
+        app:endIconMode="clear_text"
+        app:errorEnabled="true">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/createWifiEdit"
+            style="@style/editTextStyle"
+            android:hint="@string/createWifi"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:enabled="false"
+        android:id="@+id/createWifiPass"
+        style="@style/TextFieldStyle"
+        android:layout_below="@id/createWifi"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="10dp"
+        app:errorEnabled="true"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/createWifiPassEdit"
+            style="@style/editTextStyle"
+            android:hint="@string/createWifiPass"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:visibility="invisible"
+        android:id="@+id/houseControl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/createWifiPass"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_rounded"
+        android:backgroundTint="?attr/panelBackground"
+        android:onClick="send"
+        android:orientation="horizontal">
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:backgroundTint="?attr/panelBackground"
+            android:onClick="send"
+            android:padding="15dp"
+            android:shadowColor="?attr/panelBackground"
+            android:text="@string/confirm"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/DefaultTextAppearance"
+            android:textColor="?attr/colorPrimary" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginVertical="20dp"
+            android:layout_marginStart="40dp"
+            android:background="@drawable/ic_baseline_arrow_back_ios_24"
+            android:onClick="send"
+            android:rotation="180" />
+    </LinearLayout>
+
+</RelativeLayout>

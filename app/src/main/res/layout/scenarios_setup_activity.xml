@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScenariosSetupActivity">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/SetupExitBtn"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ic_baseline_arrow_back_ios_24"
+        android:contentDescription="@string/backBtnDescription"
+        android:onClick="Exit" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/scenarioCreate"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/choice_temp"
+        android:gravity="center"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_below="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="20sp"
+        android:text="Выбор датчика: "/>
+    <Spinner
+        android:id="@+id/spinner_temp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignTop="@id/choice_temp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_toEndOf="@id/choice_temp"
+        style="@style/Widget.AppCompat.Spinner.Underlined" />
+
+    <TextView
+        android:id="@+id/choice_socket"
+        android:gravity="center"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_below="@+id/spinner_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="20sp"
+        android:text="Выбор розетки: "/>
+    <Spinner
+        android:id="@+id/spinner_socket"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignTop="@id/choice_socket"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_toEndOf="@id/choice_socket"
+        style="@style/Widget.AppCompat.Spinner.Underlined" />
+
+
+
+    <TextView
+        android:id="@+id/choice_indicator"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@+id/choice_socket"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:text="Выбор индикатора: "
+        android:textColor="?attr/colorPrimary"
+        android:textSize="20sp" />
+    <Spinner
+        android:id="@+id/spinner_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignTop="@id/choice_indicator"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_toEndOf="@id/choice_indicator"
+        android:entries="@array/indicators"
+        style="@style/Widget.AppCompat.Spinner.Underlined" />
+
+    <TextView
+        android:id="@+id/choice_condition"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@+id/choice_indicator"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Выбор условия активации: "
+        android:textColor="?attr/colorPrimary"
+        android:textSize="20sp" />
+    <Spinner
+        android:id="@+id/spinner_condition"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignTop="@id/choice_condition"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_toEndOf="@id/choice_condition"
+        android:entries="@array/conditions"
+        style="@style/Widget.AppCompat.Spinner.Underlined" />
+
+    <TextView
+        android:id="@+id/choice_threshold"
+        android:gravity="center"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_below="@+id/spinner_condition"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="20sp"
+        android:text="Выбор значения активации: "/>
+    <Spinner
+        android:id="@+id/spinner_threshold"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignTop="@id/choice_threshold"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_toEndOf="@id/choice_threshold"
+        style="@style/Widget.AppCompat.Spinner.Underlined" />
+
+</RelativeLayout>
